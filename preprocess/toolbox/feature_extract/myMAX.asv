@@ -1,0 +1,7 @@
+function MAXfeature=myMAX(sig,b,a)
+
+N=length(sig);
+
+filter_sig=filter(b,a,sig');
+
+MAXfeature=max(filter_sig);
